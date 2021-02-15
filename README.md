@@ -98,5 +98,5 @@ Once the application is running, navigate to **http://localhost:3000** in your b
   ```
 
 
-# Contibuting
+## Contributing ✨
 > Any help and suggestions are very welcome and appreciated.
