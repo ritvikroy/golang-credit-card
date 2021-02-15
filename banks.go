@@ -1,5 +1,5 @@
 /*
-* CODE GENERATED AUTOMATICALLY WITH github.com/khasanovbi/banksdb/internal/gen
+* CODE GENERATED AUTOMATICALLY
 * THIS FILE MUST NOT BE EDITED BY HAND
  */
 
