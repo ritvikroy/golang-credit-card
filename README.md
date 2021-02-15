@@ -18,10 +18,15 @@ Currently identifies the following credit card companies:
 ## Installation
 
 ```bash
-$ go get github.com/bitcyber/golang-credit-card
-Or
 $ git clone git@github.com:bitcyber/golang-credit-card.git
 ```
+OR
+
+```bash
+$ go get github.com/bitcyber/golang-credit-card
+```
+
+
 
 ## Downloads
 
@@ -95,6 +100,7 @@ Once the application is running, navigate to **http://localhost:3000** in your b
     "success": "true",
     "valid": "true",
     "scheme": "AMEX"
+    }
   ```
 
 
