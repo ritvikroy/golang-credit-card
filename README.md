@@ -1,7 +1,7 @@
 # Golang-credit-card
 
 It validates credit card details, display credit card types and reduces human
-error using the Luhn algorithm using REST APIs.
+error using the Luhn algorithm with REST APIs.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 [![Go Doc](https://img.shields.io/badge/go%20doc-read-blue.svg)](https://godoc.org/github.com/bitcyber/golang-credit-card)
@@ -39,7 +39,7 @@ $ go get -d ./...
 
 ## Quick Start
 
-Run this command on Terminal after installation
+Run this command on Terminal after installation 
 ```bash
 $ go run main.go
 ```
