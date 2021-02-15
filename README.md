@@ -5,6 +5,7 @@ error using the Luhn algorithm using REST APIs.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 [![Go Doc](https://img.shields.io/badge/go%20doc-read-blue.svg)](https://godoc.org/github.com/bitcyber/golang-credit-card)
+[![Go Report Card](https://goreportcard.com/badge/github.com/bitcyber/golang-credit-card?style=flat-square)](https://goreportcard.com/report/github.com/bitcyber/golang-credit-card)
 
 Basic credit card validation using the [Luhn algorithm](http://en.wikipedia.org/wiki/Luhn_algorithm)
 
@@ -57,8 +58,9 @@ Once the application is running, navigate to **http://localhost:3000** in your b
   ```
 
 * **Method:**
-
+```http
   `GET`
+  ```
   
 *  **URL Params**
 
