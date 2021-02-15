@@ -95,7 +95,6 @@ Once the application is running, navigate to **http://localhost:3000** in your b
     "success": "true",
     "valid": "true",
     "scheme": "AMEX"
-}
   ```
 
 
