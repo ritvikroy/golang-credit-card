@@ -59,7 +59,7 @@ Once the application is running, navigate to **http://localhost:3000** in your b
 
 * **Method:**
 ```http
-  `GET`
+  GET
   ```
   
 *  **URL Params**
