@@ -18,34 +18,85 @@ Currently identifies the following credit card companies:
 ## Installation
 
 ```bash
-go get github.com/bitcyber/golang-credit-card
+$ go get github.com/bitcyber/golang-credit-card
+Or
+$ git clone git@github.com:bitcyber/golang-credit-card.git
+```
+
+## Downloads
+
+Download all go-gettable dependencies for your project.
+
+```bash
+$ go get -d ./... 
 ```
 
 ## Quick Start
 
 Run this command on Terminal after installation
 ```bash
-go run main.go
+$ go run main.go
 ```
 
-```go
-// Call GET method and checks weather GET is working or not:
-
-We can test with cURL or postman , and then send a GET request to 
-http://localhost:3000/card-scheme/ 
-to check whether GET method is working or not, increment the likes of a joke.
+Once the application is running, navigate to **http://localhost:3000** in your browser. If all went well, you should see level 1 header text **Welcome to the Credit Card Validation** displayed.
 
 
-// Pass credit card number to validate/verify
-http://localhost:3000/card-scheme/verify/{cardNumber}
+**REST API: Show Credit Card Validation**
+----
+  Returns json data about a single credit card.
 
-For example:
-http://localhost:3000/card-scheme/verify/373473833566829
+* **URL**
 
-// Display credit card validation output
+  ```http
+  http://localhost:3000/card-scheme/verify/:cardNumber
+  ```
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `cardNumber=[integer]`
+
+* **Data Params**
+
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{ "success" : "true", "valid": "true", "scheme": "AMEX/VISA/MASTERCARD" }`
+
+    OR
+
+  * **Code:** 200  <br />
+    **Content:** `{ "INVALID CARD NUMBER" }`
+    
+ 
+* **Error Response:**
+
+  * **Code:** 404 NOT FOUND <br />
+    **Content:** `{ 404 page not found }`
 
 
+* **Sample Request:**
+    ```http
+    http://localhost:3000/card-scheme/verify/373473833566829
+    ```
 
-# Contibuting
+* **Sample Response:**
+
+
+  ```javascript
+    {
+    "success": "true",
+    "valid": "true",
+    "scheme": "AMEX"
+  ```
+
+
+## Contributing ✨
 > Any help and suggestions are very welcome and appreciated.
-```

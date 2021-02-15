@@ -85,9 +85,9 @@ func CardHandler(c *gin.Context) {
 		// compare the info given from the credit cards
 		var cardType string = checkResult(result, numDigits, cardNumber)
 		if cardType == "INVALID" {
-			c.JSON(http.StatusOK, "INVALID")
+			c.JSON(http.StatusOK, "INVALID CARD NUMBER")
 		} else {
-			mapD := map[string]string{"Success": "true", "scheme": cardType}
+			mapD := map[string]string{"success": "true", "valid": "true", "scheme": cardType}
 			c.JSON(http.StatusOK, mapD)
 		}
 
